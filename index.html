@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
     <title>To Do List</title>
 </head>
+
 <body>
 
     <h1 id="myHeader">TO DO List</h1>
 
-<!-- STEPs 1 and 2 below here  -->
-    <input type="button" id="addButton" onclick=addTask() value = "Add"/>
+    <!-- STEPs 1 and 2 below here  -->
+    <input type="button" id="addButton" onclick=addTask() value="Add" />
     <input type="text" id="input" placeholder="enter task...">
 
     <hr>
-    
-<ul id="tasks">
-  <li>
-    <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
-    <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
-    make todo list
-  </li>
-  
+
+    <ul id="tasks">
+        <li>
+            <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+            <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+            <!-- EXTRA FRESH!! -->
+            <input type="button" class="Important" onclick="important(this.parentNode)" value="!" />
+            Make a To Do List
+        </li>
+
     </ul>
-<hr>
-<!-- STEPs 8 and 9 below here  -->
-<div id="divabout"></div>
-  <input type="button" 
-  value="About" 
-  onclick="doAbout()">
-  
-  <input type= "button"
-  value ="Clear"
-  onclick ="clearAbout()">
+    <hr>
+    <!-- STEPs 8 and 9 below here  -->
+    <div id="divabout"></div>
+    <input type="button" value="About" onclick="doAbout()">
 
-   
-    
- <!-- STEP 13 below here  -->
+    <!-- STEP 13 below here  -->
+    <input type="button" value="Clear" onclick="clearAbout()">
 
-    
 </body>
+
 </html>
