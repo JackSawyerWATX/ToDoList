@@ -24,8 +24,6 @@ function addTask() {
     }
 }
 
-
-
 // change styling used for given item
 function markDone(item) {
     item.className = 'finished';

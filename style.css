@@ -31,6 +31,10 @@ li.finished {
     text-decoration: line-through;
 }
 
+#textBox {
+    display: flex;
+}
+
 input[type="text"] {
     font-size: 18px;
     width: 94%;
@@ -39,7 +43,6 @@ input[type="text"] {
 
 input[type="button"] {
     font-size: 1.2em;
-    margin: -6px 4px 0px 0px;
 }
 
 #addButton {
